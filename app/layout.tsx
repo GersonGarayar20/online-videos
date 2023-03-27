@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="bg-black text-neutral-400">
         <Nav />
-        <main className="px-4">{children}</main>
+        <main className="px-6">{children}</main>
         <Menu />
       </body>
     </html>

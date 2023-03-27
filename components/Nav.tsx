@@ -1,10 +1,13 @@
 import Link from "next/link";
+import Buscador from "./Buscador";
 
 export default function Nav() {
   return (
-    <nav className="bg-neutral-900 sticky top-0 border">
-      <h1 className="text-white">Online videos</h1>
-      <p>Buscador</p>
+    <nav className="bg-black sticky z-50 top-0 flex justify-between items-center px-6 py-3">
+      <Link href="/">
+        <h1 className="text-neutral-200 text-xl">Online videos</h1>
+      </Link>
+      <Buscador />
     </nav>
   );
 }

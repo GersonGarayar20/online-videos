@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Categorias() {
   return (
-    <ul className="flex gap-2 overflow-x-auto py-4">
+    <ul className="flex gap-2 overflow-x-auto py-6">
       <Tag titulo="All" />
       <Tag titulo="Game" />
       <Tag titulo="Naturaleza" />
@@ -12,7 +12,7 @@ export default function Categorias() {
 }
 
 const Tag = ({ titulo }: { titulo: String }) => (
-  <li className="bg-neutral-800 text-neutral-500 py-1 px-2 rounded-xl hover:text-white transition-all">
+  <button className="bg-neutral-800 text-neutral-500 py-1 px-2 rounded-xl hover:text-white transition-all">
     {titulo}
-  </li>
+  </button>
 );
