@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="bg-black text-neutral-400">
+        
         <Nav />
         <main className="px-6">{children}</main>
         <Menu />
