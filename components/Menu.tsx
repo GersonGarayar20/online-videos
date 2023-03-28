@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Menu() {
   return (
-    <div className="bg-neutral-800 fixed bottom-0 w-full h-24 flex justify-evenly items-center rounded-t-3xl">
+    <div
+      style={{ borderRadius: "3em 3em 0 0" }}
+      className="bg-neutral-800 fixed bottom-0 w-full h-24 flex justify-evenly items-center"
+    >
       <Link href="/">
         <button className="group flex flex-col items-center gap-1">
           <HomeIcon />
@@ -21,7 +24,7 @@ export default function Menu() {
         </button>
       </Link>
       <Link href="/">
-        <button className="bg-[#f14] -translate-y-10 hover:scale-125 flex justify-center items-center w-14 h-14 rounded-full border-2 border-black transition-all">
+        <button className="bg-rose-600 -translate-y-8 hover:scale-110 flex justify-center items-center w-16 h-16 rounded-full shadow-lg transition-all">
           <PlusIcon />
         </button>
       </Link>
