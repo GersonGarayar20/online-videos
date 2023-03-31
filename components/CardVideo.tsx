@@ -33,7 +33,7 @@ export default function CardVideo({ id, title, url }: CardVideoProps) {
 
   return (
     <div onMouseLeave={handleLeave}>
-      <Link href={`/video/${id}`}>
+      <Link href={`/playvideo/${id}`}>
         <video
           ref={videoRef}
           onMouseEnter={handleEnter}
