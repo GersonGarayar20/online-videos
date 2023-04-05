@@ -21,9 +21,13 @@ export default async function ListaVideos() {
   const data = await getVideos();
 
   return (
-    <ul className=" grid gap-8">
+    <ul className=" grid md:grid-cols-3 gap-8">
       {data.videos.map(({ _id, title, url }: VideoInterface) => (
         <>
+          <CardVideo key={_id} id={_id} title={title} url={url} />
+          <CardVideo key={_id} id={_id} title={title} url={url} />
+          <CardVideo key={_id} id={_id} title={title} url={url} />
+          <CardVideo key={_id} id={_id} title={title} url={url} />
           <CardVideo key={_id} id={_id} title={title} url={url} />
         </>
       ))}
